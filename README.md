@@ -30,7 +30,7 @@ To install requirements, run the following command on your terminal:
 pip install -r requirements.txt
 ```
 
-## HyperSearch
+## Execution
 
 To execute HyperSearch, run this command:
 
