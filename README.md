@@ -23,13 +23,6 @@ All datasets are available at this [link](https://www.cs.cornell.edu/~arb/data/)
 | Tags         | math.sx    |   1,629    |   822,059    |     ✔     |
 |              | ubuntu     |   3,029    |   271,233    |    ✔      |
 
-## Requirements
-
-To install requirements, run the following command on your terminal:
-```setup
-pip install -r requirements.txt
-```
-
 ## Execution
 
 To execute HyperSearch, run this command:
@@ -40,20 +33,13 @@ mvn exec:java -Dexec.args="dataset name"
 mvn exec:java -Dexec.args="citeseer"
 ```
 
-## RASP on an E-commerce Dataset
+## Observations
 
-To execute RASP on an e-commerce dataset, run this command:
-
-```
-./run_case.sh
-```
-
-## Evaluation
-
-To evaluate the result TSPs, run this command:
+To get the observations in real-world hypergraphs, run this command:
 
 ```
-python main.py -a read_ndcg_rc_exp
+python observation_1.py
+python observation_2.py
 ```
 
 ## Reference
