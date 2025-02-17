@@ -35,7 +35,7 @@ mvn exec:java -Dexec.args="citeseer"
 
 ## Observations
 
-To get the observations in real-world hypergraphs, run this command:
+To get the results from the observations in real-world hypergraphs, run this command:
 
 ```
 python observation_1.py
