@@ -2,20 +2,23 @@
 
 This repository contains the source code for the paper [HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search]().
 
-In this work, we propose RASP, an algorithm for **R**obust and resource-**A**daptive mining of temporal **S**equential **P**atterns.
-RASP is built upon the following  ideas, each devised to address the above limitations: 
-* **Relaxed TSPs and Duplicated Pattern Matching**: For robustness against temporal variation, RASP enables multiple TSPs to share the same instance based on the novel concept of a relaxed TSP, which permits a predefined level of time gap deviation.
-* **Resource-Adaptive Automatic Hyperparameter Tuning**: RASP gradually increases the sizes of TSPs to detect larger TSPs. In order to maintain a proper number of TSPs of each size, \method adaptively adjusts thresholds based on the available resources, enhancing its usability.
-* **Tree-based Concise Data Structure**: RASP employs a tree-based compact data structure to efficiently manage the increasing number of TSPs, improving both speed and space efficiency.
+In this work, we propose HyperSearch, a search-based algorithm for hyperedge prediction that efficiently evaluates unconstrained candidate sets.
+RASP incorporates two key components:
+* **Empirically justified scores based on observations**: An empirically grounded scoring function derived from observations in real-world hypergraphs.
+* **Efficient search with an anti-monotonic upper bound**: We derive and use an anti-monotonic upper bound of the original scoring function (which is not anti-monotonic) to prune the search space.
 
 ## Datasets
 
-All datasets are available at this [link](https://www.dropbox.com/scl/fo/xqamn47x7ybsnww3fgmyf/h?rlkey=mzdfrn5ncaq9696ju8botp73m&dl=0).
+All datasets are available at this [link](https://www.cs.cornell.edu/~arb/data/) and [link](https://www.cs.cornell.edu/~arb/data/).
 
-| Experiment | Dataset         | Event              | Source          |
-|------------|-----------------|:------------------:|:---------------:|
-| Main       | Neuron Activity | Spike of a Neuron  | [CN2 Simulator](https://github.com/NICALab/CN2-Simulator) |
-| Additional | E-Commerce      | Click on a product | [YOOCHOOSE Gmbh](https://www.kaggle.com/datasets/chadgostopp/recsys-challenge-2015) |
+| Domain       | Dataset    |   # Nodes  | # Hyperedges | Time Range | Time Unit |
+|--------------|------------|:----------:|:------------:|:----------:|:---------:|
+| Email        | Enron      |    143     |    10,883    |     43     |  1 Month  |
+|              | Eu         |    998     |   234,760    |     75     |  2 Weeks  |
+| Contact      | High       |    327     |   172,035    |     84     |   1 Day   |
+|              | Primary    |    242     |   106,879    |    649     |  6 Hours  |
+| Tags         | math.sx    |   1,629    |   822,059    |     89     |  1 Month  |
+|              | ubuntu     |   3,029    |   271,233    |    104     |  1 Month  |
 
 ## Requirements
 
@@ -52,10 +55,4 @@ python main.py -a read_ndcg_rc_exp
 
 This code is free and open source for only academic/research purposes (non-commercial). If you use this code as part of any published research, please acknowledge the following paper.
 ```
-@article{choo2025rasp,
-  title={RASP: Robust Mining of Frequent Temporal Sequential Patterns under Temporal Variations},
-  author={Choo, Hyunjin and Eom, Minho and Kim, Gyuri and Yoon, Young-Gyu and Shin, Kijung},
-  booktitle={2025 International Conference on Extending Database Technology (EDBT)},
-  year={2025}
-}
 ```
