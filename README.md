@@ -8,7 +8,7 @@ In this work, we propose HyperSearch, a search-based algorithm for hyperedge pre
 
 ## Datasets
 
-All datasets are available at this [link](https://www.cs.cornell.edu/~arb/data/) and [link](https://drive.google.com/drive/folders/1KKwkrZ2mMcc098pqwtpQrByWmTEigwzC?usp=sharing).
+All datasets are available at this [link](https://www.cs.cornell.edu/~arb/data/) and this [link](https://drive.google.com/drive/folders/1KKwkrZ2mMcc098pqwtpQrByWmTEigwzC?usp=sharing).
 
 | Domain       | Dataset    |   # Nodes  | # Hyperedges | Timestamps |
 |--------------|------------|:----------:|:------------:|:----------:|
