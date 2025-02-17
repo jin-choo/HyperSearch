@@ -30,12 +30,14 @@ To install requirements, run the following command on your terminal:
 pip install -r requirements.txt
 ```
 
-## RASP on Neuron Activity Datasets
+## HyperSearch
 
-To execute RASP on neuron activity datasets, run this command:
+To execute HyperSearch, run this command:
 
 ```
-./run.sh
+mvn compile -B
+mvn exec:java -Dexec.args="dataset name"
+mvn exec:java -Dexec.args="citeseer"
 ```
 
 ## RASP on an E-commerce Dataset
