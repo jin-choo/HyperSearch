@@ -1,4 +1,4 @@
-# HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search
+# HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search (ICDM'25)
 
 This repository contains the source code for the paper [HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search]().
 
