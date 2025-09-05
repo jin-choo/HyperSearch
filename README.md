@@ -1,6 +1,6 @@
 # HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search (ICDM'25)
 
-This repository contains the source code for the paper [HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search]().
+This repository contains the source code for the paper [HyperSearch: Prediction of New Hyperedges through Unconstrained yet Efficient Search]() by [Hyunjin Choo](https://github.com/jin-choo/), [Fanchen Bu](), [Hyunjin Hwang](), [Young-Gyu Yoon](https://nica.kaist.ac.kr/), and [Kijung Shin](https://kijungs.github.io/), to be presented at [ICDM 2025](https://www3.cs.stonybrook.edu/~icdm2025/).
 
 In this work, we propose HyperSearch, a search-based algorithm for hyperedge prediction that efficiently evaluates unconstrained candidate sets, by incorporating two key components:
 * **Empirically justified scores based on observations**: An empirically grounded scoring function derived from observations in real-world hypergraphs.
